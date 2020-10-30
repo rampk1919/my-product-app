@@ -4,9 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
+import ProductComponent from './routerComponents/ProductComponent';
+import HomeComponent from './routerComponents/HomeComponent';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <BrowserRouter>
+      <App></App>
+    </BrowserRouter> 
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
