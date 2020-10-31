@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import DropDownComponent from './../reusableComponents/dropdownComponent'
 import {Categories, Manufacturers} from './../modeldata/model';
 import {HttpService} from './../Service/httpService';
+import {Route, Link, Switch, Redirect} from 'react-router-dom';
 
 class ProductComponent extends Component {
     constructor(props) {
@@ -199,8 +200,11 @@ class ProductComponent extends Component {
                onClick={this.save.bind(this)}/>
                
              </div>
-             </form>
-            
+             <div>
+                  <Link to={"/"}>Go to Home Page</Link>
+              </div>
+              </form>
+
 
             </div>
         );
